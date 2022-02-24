@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Videos</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--link.favicon funciona para agregar un Icono en la pestaña-->
+    <link rel="shortcut icon" href="img/icono principal.jpg" type="image/x-icon">
+    <link href="http://fonts.cdnfonts.com/css/gelpenupright" rel="stylesheet">
+    <link rel="stylesheet" href="/css/estilos.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <!--Este nav sirve para crear una barra de navegacion-->
+      <nav>
+       <a href="index.html">Inicio</a>
+       <a href="somos.html">Visitas</a>
+       <a href="galeria.html">Exposiciones</a>
+       <a href="potafolio.html">Acerca</a>
+       <a href="video.html">Videos</a>
+   </nav>
+        <!--Aqui comienza las secciones-->
+        <section class="textos-header">
+          <h1></h1>
+          <img src="img/Logo.png" alt="">
+          <h2></h2>
+      </section>
+     <!--efecto de olas-->
+  <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.85 C332.39,271.14 264.11,-90.04 500.00,49.85 L500.00,149.60 L0.00,149.60 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+
+ </header>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
+    <main>
+      <section class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/y44HrsONmeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+   </main>
+
+   <!-- formulario de contacto en html y css -->  
+
+  <div class="contact-form">
+
+    <div class="formulario">      
+      <h1>Formulario de contacto</h1>
+        <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+
+          <form action="submeter-formulario.php" method="post">       
+
+            
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+              
+                <p>
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+            
+                <p>
+                  <label for="telefone" class="colocar_telefono">Teléfono
+                  </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>       
+              
+                <p>
+                  <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                </p>    
+              
+                <p>
+                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                </p>                    
+              
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>          
+            
+          </form>
+    </div>  
+  </div>
+   
+    <!--Pie de pagina-->
+    <footer>
+      <div class="contenedor-footer">
+          <div class="contenedor-fo">
+              <img src="img/logos gob (1).PNG" alt="">
+              <p></p>
+              <img src="img/logos gob (2).PNG" alt="">
+          </div>
+
+          <div class="contenedor-foo">
+            <h4>Dirección</h4>
+            <img src="" alt="">
+            <p>Paseo de la Reforma 51</p>
+            <p>Bosque de Chapultepec</p>
+            <p>Miguel Hidalgo C.P 11580</p>
+            <p>Tel: 55 4122 8200</p>
+            <a href="https://www.google.com/maps/place/Museo+Tamayo+Arte+Contempor%C3%A1neo/@19.4269472,-99.1827905,16z/data=!4m5!3m4!1s0x0:0x2cd41906d3e91652!8m2!3d19.4256678!4d-99.1813804">Mapa</a>
+          </div>
+
+          <div class="contenedor-foo">
+              <h4>Facebook</h4>
+              <img src="img/facebook.png" alt="">
+              <a href="https://www.facebook.com/museotamayo/">@museotamayo</a>
+              
+              <h4>Twitter</h4>
+              <img src="img/twitter.png" alt="">
+              <a href="https://twitter.com/museotamayo">@museotamayo</a>
+
+              <h4>Instagram</h4>
+              <img src="img/intagram.png" alt="">
+              <a href="https://www.instagram.com/eneltamayo/">@eneltamayo</a>
+          </div>
+
+          <div class="contenedor-foo">
+              <h4>eMail</h4>
+              <img src="img/email.png" alt="">
+              <p>einfo@museotamayo.org</p>
+          </div>
+         
+          <!--Formulario-->
+          <div class="contenedor-foo">
+            <h4>Newsletter</h4>
+            <img src="" alt="">
+            <div class="formulario">       
+  <form action="/action_page.php">
+    <input type="text" id="fname" name="fname" value="Suscríbete a nuestro newsletter"><br>
+    <p></p>
+    <input type="submit" value="SUSCRIBIRME">
+  </form> 
+  </div> 
+  
+    <h4 class="titulo-final">&copy; Maestría Unitec</h4>
+  
+      </div>
+  </footer>
+  
+  </body>
+</html>
