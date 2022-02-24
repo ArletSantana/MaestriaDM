@@ -1,0 +1,543 @@
+
+/*Quitamos la separacion de la pagina
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+
+body{
+                                                                    font-family: 'Alegreya Sans Medium', sans-serif;
+                                                                    font-family: 'Alegreya Sans', sans-serif;
+                                                                    font-family: 'Alegreya Sans SC', sans-serif;
+                                                                    font-family: 'Alegreya Sans Thin', sans-serif;
+                                                                    font-family: 'Alegreya Sans SC Thin', sans-serif;
+                                                                    font-family: 'Alegreya Sans Light', sans-serif;
+                                                                    font-family: 'Alegreya Sans SC Light', sans-serif;
+                                                                    font-family: 'Alegreya Sans SC Medium', sans-serif;
+                                                                    font-family: 'Alegreya Sans ExtraBold', sans-serif;
+                                                                    font-family: 'Alegreya Sans SC ExtraBold', sans-serif;
+                                                                    font-family: 'Alegreya Sans Black', sans-serif;
+                                                                    font-family: 'Alegreya Sans SC Black', sans-serif;
+                                                                                              
+}
+
+/*todas las clases hablamos de los contenedores*/
+
+.contenedor{
+    padding: 60px 0;
+    /*los bordes de arriba y abajo que tengan 60px*/
+    width: 90%;
+    
+    max-width: 1000px;
+    /* que tenga un margen grande*/
+
+    margin:  auto;
+    /* centre todo dentro del contenedor*/
+
+    overflow: hidden;
+    /* si la imagen se sale del contenedor que lo esconda*/
+
+}
+
+.titulo{
+    color: rgba(0, 0, 0, 0.829);
+    font-size: 30px;
+    /*tamaño de la letra*/
+    
+    text-align: center;
+    margin-bottom: 60px;
+    /*distinguir titulos de cada seccion*/
+
+}
+
+/*header*/
+header{
+    width: 100%;
+    height: 600px;
+    background: url(../Img/Museo.jpg);
+    /*esta es la ruta para insertar una image de fondo*/
+    background-size: cover;
+    background: attachments;
+    position: relative;
+    /*que se quede bloqueada la imagen */
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+
+}
+
+nav>a{
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+    /*para que la fuente sea mas ligera*/
+    text-decoration: none;
+    /*quita lo subrayado*/
+    font-size: 20px;
+    margin-right: 10px;
+    /*realiza la separacion de los enlaces*/
+}
+
+nav>a:hover{
+    color: rgb(139, 4, 151);
+    text-decoration: underline;
+    /*le coloca un subrayado a los enlaces*/
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /*colocamos la ola fija y quitamos o igualamos el color de el cuerpo/body*/
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    /*centra la parte de header*/
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: rgb(255, 0, 0);
+/* para el texto en header*/
+}
+
+.textos-header h2{
+    font-size: 40px;
+    font-weight: 300;
+    color: darkblue;
+    /*para el texto en el header*/
+}
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+    /*repartir el espacio*/
+}
+
+.sobre-nosotros- .contenedor-textos{
+    width: 45%;
+}
+
+.contenedor-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenedor-textos h3 span{
+    background: rgba(245, 94, 94, 0.829);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+.contenedor-textos p{
+    padding: 0 0 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*Galeria*/
+.portafolio{
+    background: rgb(255, 255, 255);
+    width: 800px;
+    height: 800px;
+    margin-left: 300px;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /*para que no se junten todas las fotos*/
+}
+
+.imagen-about-us{
+    width: 45%;
+}
+
+.imagen-port{
+    width: 30%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.imagen-port>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*sirve para cuando tenemos un poco de error*/
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(245, 94, 94, 0.829);
+    transition: transform 5s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /*para que las galerias esten juntas*/
+    
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: rgb(255, 255, 255);
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/**cards*/
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: rgba(245, 94, 94, 0.829);
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5x;
+}
+
+.cards .card> .contenido-texto-card{
+    width: 60%;
+    color: aliceblue;
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+/*contenedor de servicios*/
+.about-service{
+    background: rgb(161, 157, 157);
+    padding-bottom: 30px;
+}
+
+.servicios-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicios.ind{
+    width: 48%;
+    text-align: center;
+    align-items: center;
+}
+
+.servicios-ind img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid cornsilk;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+
+.servicios-ind h3{
+    margin: 0px 0;
+}
+
+.servicios-ind p{
+    width: 80%;
+    font-weight: 300;
+    text-align: center;
+}
+
+/*footer pie de pagina*/
+
+footer {
+    background: rgb(255, 255, 255);
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 2px solid rgb(180, 44, 44)
+}
+
+.contenedor-foo img{
+    display: box;
+    width: 15%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-foo h4{
+    color: rgb(207, 21, 21);
+    border-bottom: 2px solid rgb(180, 42, 42);
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.contenedor-foo p{
+    color: rgb(172, 33, 33);
+}
+
+titulo-final{
+    text-align: center;
+    font-size: 10px;
+    margin: 20px 0 0;
+    color: black;
+}
+
+.contenedor-fo{
+    display: flex;
+    width: 20%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-fo img{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.horarios {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+
+
+/**entrada*/
+.entradas{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.entradas .entrada{
+    background: rgba(59, 59, 59, 0.829);
+    display: flex;
+    width: 46%;
+    height: 250px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5x;
+}
+
+.entradas .entrada> .contenido-texto-entrada{
+    width: 60%;
+    color: aliceblue;
+}
+
+.entradas .entrada img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.entradas .entrada> .contenido-texto-entrada iframe{
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+}
+
+.entradas .entrada p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.entradas .entrada h4{
+    text-align: center;
+}
+
+.entradas .entrada h6{
+    text-align: center;
+    font-size: 15px;
+}
+
+/**guias*/
+.guias{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.guias .guia{
+    background: rgba(59, 59, 59, 0.829);
+    display: flex;
+    width: 46%;
+    height: 250px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5x;
+}
+
+.guias .guia> .contenido-texto-guia{
+    width: 60%;
+    color: aliceblue;
+}
+
+.guias .guia img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.guias .guia p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.guias .guia h4{
+    text-align: center;
+}
+
+/**proto*/
+.proto{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.proto .pro{
+    background: rgba(245, 94, 94, 0.829);
+    display: flex;
+    width: 46%;
+    height: 250px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5x;
+}
+
+.proto .pro> .contenido-texto-pro{
+    width: 60%;
+    color: aliceblue;
+}
+
+.proto .pro img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+/**acce*/
+.acce{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.acce .acc{
+    background: rgba(59, 59, 59, 0.829);
+    display: flex;
+    width: 46%;
+    height: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5x;
+}
+
+.acce .acc> .contenido-texto-acc{
+    width: 60%;
+    color: aliceblue;
+}
+
+.acce .acc img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.textos-exposiciones h1{
+    text-align: center;
+    color: rgb(190, 0, 0);
+}
+
+.textos-exposiciones h2{
+    text-align: center;
+}
+
+.textos-exposiciones h6{
+    text-align: center;
+}
+
+.expos-anteriores h2{
+    text-align: center;
+    color: rgb(190, 0, 0);
+}
+
+.expos-anteriores h6{
+    text-align: center;
+}
+
+.expos-anteriores h3{
+    text-align: center;
+}
+
+.container h1{
+    text-align: center;
+    color:rgb(190, 0, 0);
+}
+
+.directorio h2{
+    text-align: center;
+}
+
+.video iframe{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5x;
+}
+
+.contact-form formulario h1{
+align-items: center;
+}
